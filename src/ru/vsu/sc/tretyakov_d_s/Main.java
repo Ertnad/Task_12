@@ -8,7 +8,7 @@ public class Main {
 
     String str = readString();
     CheckingBrackets check = new CheckingBrackets();
-    str = str.replaceAll("[A-Za-zА-Яа-я0-9 ]", "");
+    str = check.removeAllSymbolsExpectBrackets(str);
     printResult(str, check);
 
     }
